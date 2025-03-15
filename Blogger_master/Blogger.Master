@@ -6,14 +6,61 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div id="New">
+            <asp:Button runat="server" ID="btn_New" Text="New" OnClientClick="visibility('New'); return false" />
+        </div>
+        <div id="Back" style="display: none">
+            <asp:Button runat="server" ID="btn_Back" Text="Back" OnClientClick="visibility('Back'); return false" />
+        </div>
+
+
+        <div id="ONE">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <div id="TWO" style="display: none">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+     
     </form>
+    <script type="text/javascript">
+        function visibility(action) {
+            var a = document.getElementById('ONE');
+            var b = document.getElementById('TWO');
+
+            var button_new = document.getElementById('New');
+            var button_Back = document.getElementById('Back');
+
+            if (action === 'New') {
+
+                a.style.display = "none";
+                button_new.style.display = "none";
+                button_Back.style.display = "block";
+                b.style.display = "block";
+            } else
+            {
+                a.style.display = "block";
+                button_new.style.display = "block";
+                button_Back.style.display = "none";
+                b.style.display = "none";
+            }
+
+
+            console.log("Back Functionn Alert")
+
+        }
+
+
+
+
+
+
+    </script>
 </body>
 </html>
