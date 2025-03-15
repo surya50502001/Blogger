@@ -9,6 +9,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="One">
-        <h1>hi bro</h1>
+        <h1>hi bro how r u</h1>
     </div>
 </asp:Content>
