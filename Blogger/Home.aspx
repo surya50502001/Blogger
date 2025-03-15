@@ -12,7 +12,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel runat="server" >
         <div class="One">
-            <h1>Main Content</h1>
+            <h1>Hi Bro! Nanthessh</h1>
               <input placeholder="name" type="text" />
         </div>
     </asp:Panel>
